@@ -1,0 +1,33 @@
+body{
+    background-color: lightblue;
+}
+h1.principal{
+    text-align: center;
+    font-size: 40pt;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+h2.subTituloInfo{
+    text-align: center;
+    font-size: 8pt;
+}
+ul.miguel{
+    text-align: center;
+}
+li.miguel{
+    display: inline;
+    padding: 0.7%;
+}
+ul.ubatuba{
+    text-align: center;
+}
+li.ubatuba{
+    display: inline;
+    padding: 0.7%;
+}
+a.tituloComLink{
+    text-decoration: none;
+    text-decoration-color: black;
+    color: black;
+}
