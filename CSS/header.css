@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+}
+#menu-principal {
+    margin-top: 20px;
+    margin-bottom: 30pt;
+    text-align: center;
+    padding: 30px;
+    border-bottom: 3px solid rgb(90, 0, 149);
+    color: rgb(109, 44, 153);
+}
+#titulo-principal {
+    font: normal 40pt Arial;
+}
+#menu-link {
+    font: normal 20pt Arial;
+    padding: 20px;
+}

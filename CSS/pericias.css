@@ -1,0 +1,88 @@
+#titulo-1 {
+    font: normal 40pt Arial;
+    color: rgb(215, 61, 230);
+    margin: 40px;
+    margin-bottom: 30pt;
+    text-align: center;
+    border-bottom: 2px solid rgb(215, 61, 230) ;
+}
+#pericias-titulo {
+    font: normal 35pt Arial;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#pericias-paragrafo {
+    background-color: black;
+    height: auto;
+    width: 70vmax;
+    margin: auto;
+    padding: 1%;
+    border: 2px solid white;
+}
+.pericias-titulo2 {
+    font: normal 25pt Arial;
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+.pericias-info {
+    margin-top: 20pt;
+    margin-bottom: 60pt;
+    text-align: center;
+}
+.pericias-bloco {
+    color: white;
+    font: normal 15pt Arial;
+    margin: 7px;
+    margin-top: 30px;
+    width: 170px;
+    height: 130px;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: inline-block;
+}
+#pericia-nome {
+    margin-top: 20pt;
+}
+#Força {
+    color: rgb(255, 0, 0);
+}
+#Destreza {
+    color: rgb(172, 172, 172);
+}
+#Sabedoria {
+    color: rgb(0, 255, 0);
+}
+#Inteligência {
+    color: rgb(0, 255, 255);
+}
+#Carisma {
+    color: rgb(255, 255, 0);
+}
+#Constituição{
+    color: rgb(255, 123, 0);
+}
+#atletismo,
+#Adestrar,
+#Intuicao,
+#Medicina,
+#Percepcao,
+#Sobrevivencia,
+#Acrobacia,
+#Furtividade,
+#Prestidigitacao,
+#Arcanismo,
+#Historia,
+#Investigacao,
+#Natureza,
+#Religiao,
+#Atuacao,
+#Enganacao,
+#Intimidacao,
+#Persuasao,
+#modificador {
+    margin: 20px;
+    font-size: 20pt;
+}
