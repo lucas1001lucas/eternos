@@ -8,6 +8,7 @@ body {
     padding: 30px;
     border-bottom: 3px solid rgb(90, 0, 149);
     color: rgb(109, 44, 153);
+    text-decoration-color: rgb(109, 44, 153);
 }
 #titulo-principal {
     font: normal 40pt Arial;
