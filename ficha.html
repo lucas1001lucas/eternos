@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="js/funcionalites.js"></script>
+    <title>Eternos</title>
+</head>
+
+<!--#8210a5;-->
+
+<body class="bg-dark">
+
+    <!-- TITULO -->
+    <h1 class="m-4">Eternos</h1>
+
+    <!-- FIRST LINE -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- PERSONAL DETAILS -->
+            <div class="col col-4 m-4 border border-2 rounded-3">
+                <!-- PERSONAL DETAILS - TITLE -->
+                <h2>DETALHES PESSOAIS
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-pencil-square text-light m-0 ms-1" viewBox="0 0 16 16" data-bs-toggle="modal"
+                        data-bs-target="#editDetails">
+                        <path
+                            d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                        <path fill-rule="evenodd"
+                            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                    </svg>
+                    <!-- PERSONAL DETAILS - MODAL -->
+                    <div class="modal fade" tabindex="-1" aria-labelledby="editDetails" aria-hidden="true"
+                        id="editDetails">
+                        <div class="modal-dialog modal-sm modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-light">
+                                    <h5 class="modal-title" id="editDetailsTitle">Detalhes Pessoais</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body bg-light">
+                                    <div class="row row-cols-1 left">
+                                        <div class="col bg-light pb-0">
+                                            <label for="details" class="form-label">Nome</label>
+                                            <div class="input-group mb-3 editInput">
+                                                <input type="text" class="bg-light" id="details nomeInput"
+                                                    aria-describedby="basic-addon3">
+                                            </div>
+                                        </div>
+                                        <div class="col bg-light pb-0 pt-0">
+                                            <label for="details" class="form-label">Jogador</label>
+                                            <div class="input-group mb-3 editInput">
+                                                <input type="text" class="bg-light" id="details jogadorInput"
+                                                    aria-describedby="basic-addon3">
+                                            </div>
+                                        </div>
+                                        <div class="col bg-light pb-0 pt-0">
+                                            <label for="details" class="form-label">Casa</label>
+                                            <div class="input-group mb-3 editInput">
+                                                <input type="text" class="bg-light" id="details casaInput"
+                                                    aria-describedby="basic-addon3">
+                                            </div>
+                                        </div>
+                                        <div class="col bg-light pt-0">
+                                            <label for="details" class="form-label">Especialidade</label>
+                                            <div class="input-group mb-3 editInput">
+                                                <input type="text" class="bg-light" id="details especialidadeInput"
+                                                    aria-describedby="basic-addon3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer bg-light">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                    <button type="button" class="btn btn-primary" onclick="updateDetails()">Salvar Mudanças</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //PERSONAL DETAILS - MODAL -->
+                </h2>
+                <!-- PERSONAL DETAILS - INFO -->
+                <div class="row row-cols-1">
+                    <div class="col card-body bg-dark pb-0">
+                        <h3>Nome</h3>
+                        <p id="nome">Fioréla Ruze</p>
+                    </div>
+                    <div class="col card-body bg-dark pb-0 pt-0">
+                        <h3>Jogador</h3>
+                        <p id="jogador">Lucas Paraiso</p>
+                    </div>
+                    <div class="col card-body bg-dark pb-0 pt-0">
+                        <h3>Casa</h3>
+                        <p id="casa">Corvinal</p>
+                    </div>
+                    <div class="col card-body bg-dark pt-0">
+                        <h3>Especialidade</h3>
+                        <p id="especialidade">Runas</p>
+                    </div>
+                </div>
+                <!-- //PERSONAL DETAILS - INFO -->
+            </div>
+            <!-- //PERSONAL DETAILS -->
+
+            <!-- VITAL INFO -->
+            <div class="col col-4 m-4 rounded-3" style="text-align: center;">
+                <div>
+                    <img src="images/fiorela.png" class="border border-1 rounded-circle">
+                </div>
+                <div>
+                    <div id="progressbar">
+                        Vida
+                    </div>
+                    <div class="progress m-4 bg-light mt-2" style="height: 25px;">
+                        <div class="progress-bar" id="life" name="life" role="progressbar" style="width: 50%;"
+                            aria-valuenow="12" aria-valuemin="0" aria-valuemax="12">12 / 24</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="progressbar">
+                        Arcanismo
+                    </div>
+                    <div class="progress m-4 bg-light mt-2" style="height: 25px;">
+                        <div class="progress-bar" id="arcanismo" name="arcanismo" role="progressbar"
+                            style="width: 71.43%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="7">5 / 7</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="progressbar">
+                        Extra
+                    </div>
+                    <div class="progress m-4 bg-light mt-2" style="height: 25px;">
+                        <div class="progress-bar" id="extra" name="extra" role="progressbar" style="width: 100%;"
+                            aria-valuenow="3" aria-valuemin="0" aria-valuemax="3">3 / 3</div>
+                    </div>
+                </div>
+            </div>
+            <!-- //VITAL INFO -->
+        </div>
+    </div>
+    <!-- //FIRST LINE -->
+
+    <!-- SECOND LINE -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- ATTRIBUTES -->
+            <div class="col col-4 m-4 border border-2 rounded-3" style="height: 100%;">
+                <h2 class="mb-3 mt-4">ATRIBUTOS</h2>
+                <div class="row row-cols-2 justify-content-center">
+                    <div class="col atributo">
+                        <div>Força +1</div>
+                        <hr class="m-2">
+                        <div>12</div>
+                    </div>
+                    <div class="col atributo">
+                        <div>Constituição +1</div>
+                        <hr class="m-2">
+                        <div>12</div>
+                    </div>
+                    <div class="col atributo">
+                        <div>Destreza +4</div>
+                        <hr class="m-2">
+                        <div>18</div>
+                    </div>
+                    <div class="col atributo">
+                        <div>Inteligência +8</div>
+                        <hr class="m-2">
+                        <div>26</div>
+                    </div>
+                    <div class="col atributo">
+                        <div>Sabedoria +2</div>
+                        <hr class="m-2">
+                        <div>14</div>
+                    </div>
+                    <div class="col atributo">
+                        <div>Carisma +1</div>
+                        <hr class="m-2">
+                        <div>12</div>
+                    </div>
+                </div>
+            </div>
+            <!-- //ATTRIBUTES -->
+
+
+            <!-- INVENTORY -->
+            <div class="col col-4 m-4 border border-2 rounded-3" style="height: 350px;">
+                <h2 class="mb-3 mt-4">INVENTÁRIO</h2>
+                <div id="inventory">
+                    <div class="input-group mb-2">
+                        <span class="col-1 input-group-text bg-dark" id="inventoryCount">1.</span>
+                        <input type="text" class="col bg-dark m-2">
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="col-1 input-group-text bg-dark" id="inventoryCount">2.</span>
+                        <input type="text" class="col bg-dark m-2">
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="col-1 input-group-text bg-dark" id="inventoryCount">3.</span>
+                        <input type="text" class="col bg-dark m-2">
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="col-1 input-group-text bg-dark" id="inventoryCount">4.</span>
+                        <input type="text" class="col bg-dark m-2">
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="col-1 input-group-text bg-dark" id="inventoryCount">5.</span>
+                        <input type="text" class="col bg-dark m-2">
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="col-1 input-group-text bg-dark" id="inventoryCount">6.</span>
+                        <input type="text" class="col bg-dark m-2">
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="col-1 input-group-text bg-dark" id="inventoryCount">7.</span>
+                        <input type="text" class="col bg-dark m-2">
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="col-1 input-group-text bg-dark" id="inventoryCount">8.</span>
+                        <input type="text" class="col bg-dark m-2">
+                    </div>
+                    <div class="input-group">
+                        <span class="col-1 input-group-text bg-dark" id="inventoryCount">9.</span>
+                        <input type="text" class="col bg-dark m-2">
+                    </div>
+                </div>
+            </div>
+            <!-- //INVENTORY -->
+        </div>
+    </div>
+    <!-- //SECOND LINE -->
+</body>
+
+</html>
