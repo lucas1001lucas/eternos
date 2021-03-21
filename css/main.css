@@ -1,0 +1,104 @@
+h1 {
+    font-size: 40pt;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font: bold 14pt Arial;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    color: white;
+    font: bold 11pt Arial;
+}
+
+p {
+    color: white;
+    font: normal 10pt Arial;
+    border-bottom: solid 1px white;
+    padding-left: 5px;
+    margin-left: 5px;
+}
+
+label{
+    color: black;
+    font: bold 11pt Arial;
+}
+
+input[type=text] {
+    width: 100%;
+    font: normal 10pt Arial;
+    border: none;
+    border-bottom: solid 1px black;
+    color: black;
+    margin-left: 10px;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+#editDetailsTitle {
+    font: bold 18pt Arial;
+    color: black;
+}
+
+div.left {
+    text-align: left;
+}
+
+div#editlabel {
+    color: black;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
+div#life, div#arcanismo, div#extra{
+    font: bold 11pt Arial;
+}
+
+div#life {
+    background-color: rgb(170, 1, 1);
+}
+
+div#arcanismo {
+    background-color: #6f42c1;/*rgb(170, 1, 1);*/
+}
+
+div#extra {
+    background-color: #198754;/*rgb(170, 1, 1);*/
+}
+
+div#progressbar {
+    font: bold 11pt Arial;
+    color: white;
+    text-align: left;
+    padding-left: 20px;
+}
+
+div.atributo {
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    width: 45%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+div#inventory {
+    overflow: auto;
+    height: 80%;
+}
+
+span#inventoryCount {
+    color: white;
+    border: none;
+}
