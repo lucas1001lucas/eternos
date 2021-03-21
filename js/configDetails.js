@@ -1,10 +1,11 @@
 let firebaseConfig = {
-    apiKey: "AIzaSyCY97qXpbgMUcItkk2aLwix0FDAfrAZHSE",
-    authDomain: "testandomensagem27.firebaseapp.com",
-    projectId: "testandomensagem27",
-    storageBucket: "testandomensagem27.appspot.com",
-    messagingSenderId: "633679985653",
-    appId: "1:633679985653:web:bc0b484b4b0d8fc0197ebc"
+    apiKey: "AIzaSyBV-elOB-low2ovVrGL6vDqIAHSO6EZumQ",
+    authDomain: "ficha-eternos.firebaseapp.com",
+    projectId: "ficha-eternos",
+    storageBucket: "ficha-eternos.appspot.com",
+    messagingSenderId: "427482599114",
+    appId: "1:427482599114:web:ba83fe11346dc06a3cee33",
+    measurementId: "G-F09NGP2CK7"
 };
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
