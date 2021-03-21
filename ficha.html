@@ -7,8 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
     <link rel="stylesheet" href="./css/main.css">
-    <script src="js/funcionalites.js"></script>
+    <script src="js/configDetails.js"></script>
+    <script src="js/details.js"></script>
     <title>Eternos</title>
 </head>
 
@@ -43,34 +49,34 @@
                                 <div class="modal-body bg-light">
                                     <div class="row row-cols-1 left">
                                         <div class="col bg-light pb-0">
-                                            <label for="details" class="form-label">Nome</label>
+                                            <label for="nomeInput" class="form-label">Nome</label>
                                             <div class="input-group mb-3 editInput">
-                                                <input type="text" class="bg-light" id="details nomeInput" aria-describedby="basic-addon3">
+                                                <input type="text" class="bg-light" id="nomeInput" aria-describedby="basic-addon3">
                                             </div>
                                         </div>
                                         <div class="col bg-light pb-0 pt-0">
-                                            <label for="details" class="form-label">Jogador</label>
+                                            <label for="jogadorInput" class="form-label">Jogador</label>
                                             <div class="input-group mb-3 editInput">
-                                                <input type="text" class="bg-light" id="details jogadorInput" aria-describedby="basic-addon3">
+                                                <input type="text" class="bg-light" id="jogadorInput" aria-describedby="basic-addon3">
                                             </div>
                                         </div>
                                         <div class="col bg-light pb-0 pt-0">
-                                            <label for="details" class="form-label">Casa</label>
+                                            <label for="casaInput" class="form-label">Casa</label>
                                             <div class="input-group mb-3 editInput">
-                                                <input type="text" class="bg-light" id="details casaInput" aria-describedby="basic-addon3">
+                                                <input type="text" class="bg-light" id="casaInput" aria-describedby="basic-addon3">
                                             </div>
                                         </div>
                                         <div class="col bg-light pt-0">
-                                            <label for="details" class="form-label">Especialidade</label>
+                                            <label for="especialidadeInput" class="form-label">Especialidade</label>
                                             <div class="input-group mb-3 editInput">
-                                                <input type="text" class="bg-light" id="details especialidadeInput" aria-describedby="basic-addon3">
+                                                <input type="text" class="bg-light" id="especialidadeInput" aria-describedby="basic-addon3">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer bg-light">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                    <button type="button" class="btn btn-primary" onclick="updateDetails()">Salvar Mudanças</button>
+                                    <button type="button" class="btn btn-primary" onclick="updateDetails()" data-bs-dismiss="modal">Salvar Mudanças</button>
                                 </div>
                             </div>
                         </div>

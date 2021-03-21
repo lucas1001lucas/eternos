@@ -25,7 +25,7 @@ p {
     margin-left: 5px;
 }
 
-label{
+label {
     color: black;
     font: bold 11pt Arial;
 }
@@ -61,7 +61,9 @@ img {
     width: 150px;
 }
 
-div#life, div#arcanismo, div#extra{
+div#life,
+div#arcanismo,
+div#extra {
     font: bold 11pt Arial;
 }
 
@@ -70,11 +72,13 @@ div#life {
 }
 
 div#arcanismo {
-    background-color: #6f42c1;/*rgb(170, 1, 1);*/
+    background-color: #6f42c1;
+    /*rgb(170, 1, 1);*/
 }
 
 div#extra {
-    background-color: #198754;/*rgb(170, 1, 1);*/
+    background-color: #198754;
+    /*rgb(170, 1, 1);*/
 }
 
 div#progressbar {
